@@ -11,9 +11,18 @@
     "require": {
         "consolidation/robo": "~1"
     },
+    "require-dev": {
+        "drupal/coder": "^8.3",
+        "phpunit/phpunit": "^8.0"
+    },
     "autoload": {
         "psr-4": {
             "Kerasai\\Robo\\Config\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kerasai\\Robo\\Config\\Tests\\": "tests/"
         }
     }
 }
