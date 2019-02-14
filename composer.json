@@ -1,0 +1,12 @@
+{
+    "name": "kerasai/robo-config",
+    "description": "Configuration handling for Robo PHP task runner.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Will Long",
+            "email": "will@kerasai.com"
+        }
+    ],
+    "require": {}
+}
