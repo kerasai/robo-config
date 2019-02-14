@@ -8,5 +8,12 @@
             "email": "will@kerasai.com"
         }
     ],
-    "require": {}
+    "require": {
+        "consolidation/robo": "~1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kerasai\\Robo\\Config\\": "src/"
+        }
+    }
 }
