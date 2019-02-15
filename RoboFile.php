@@ -8,6 +8,13 @@
 class RoboFile extends \Robo\Tasks {
 
   /**
+   * RoboFile constructor.
+   */
+  public function __construct() {
+    $this->stopOnFail();
+  }
+
+  /**
    * Run tests.
    */
   public function test() {
