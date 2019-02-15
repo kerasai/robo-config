@@ -6,8 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      # Specify the version you desire here
-      - image: circleci/php:7.1
+      - image: circleci/php:7.0
 
     steps:
       - checkout

@@ -2,10 +2,12 @@
 
 namespace Kerasai\Robo\Config\Tests\Unit;
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * Class UnitTest.
  */
-class UnitTest extends \PHPUnit\Framework\TestCase {
+class UnitTest extends TestCase {
 
   /**
    * Unit test to ensure PHPUnit is running.
