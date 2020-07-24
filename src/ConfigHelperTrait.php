@@ -20,7 +20,7 @@ trait ConfigHelperTrait {
    * @return mixed
    *   The configuration value.
    */
-  public function getConfigVal($name, $default = NULL) {
+  protected function getConfigVal($name, $default = NULL) {
     return Robo::Config()->get($name, $default);
   }
 
@@ -36,7 +36,7 @@ trait ConfigHelperTrait {
    * @throws \InvalidArgumentException
    *   When the configuration does not exist.
    */
-  public function requireConfigVal($name) {
+  protected function requireConfigVal($name) {
     $val = $this->getConfigVal($name);
     if ($val === NULL) {
       throw new \InvalidArgumentException(sprintf('Configuration "%s" not found.', $name));
@@ -53,7 +53,7 @@ trait ConfigHelperTrait {
    * @return array
    *   The config values.
    */
-  public function getConfigVals(array $config) {
+  protected function getConfigVals(array $config) {
     return array_map(function ($item, $key) {
       return $this->getConfigVal($key, $item);
     }, $config);
