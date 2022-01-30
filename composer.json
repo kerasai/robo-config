@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "consolidation/robo": "~1 || ~2"
+        "consolidation/robo": "~1 || ~2 || ~3"
     },
     "require-dev": {
         "drupal/coder": "^8.3",
